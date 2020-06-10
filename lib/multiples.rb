@@ -5,6 +5,7 @@ def collect_multiples(limit)
 end
     
 def sum_multiples(limit)
-    (1...limit).to_a.select { |num| num % 3 == 0 || num % 5 == 0}.sum
+    # (1...limit).to_a.select { |num| num % 3 == 0 || num % 5 == 0}.sum
+    collect_multiples(limit).sum
 end
 
