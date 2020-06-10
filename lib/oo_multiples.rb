@@ -6,15 +6,7 @@ class Multiples
     end
 
     def collect_multiples
-        result = []
-        for number in (1...@limit)
-            if number%3 == 0
-                result << number
-            elsif number%5 == 0
-                result << number
-            end
-        end
-        result
+        (1...@limit).select{|number| number%3 == 0 or number%5 == 0}
     end
 
     def sum_multiples
