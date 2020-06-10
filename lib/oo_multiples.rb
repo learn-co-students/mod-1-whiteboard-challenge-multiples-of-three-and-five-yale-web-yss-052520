@@ -1,4 +1,3 @@
-require_relative './multiples.rb'
 # Enter your object-oriented solution here!
 class Multiples 
     attr_reader :limit
